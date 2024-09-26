@@ -7,7 +7,7 @@ export async function GET() {
     await dbConnect();
 
     const rankings = await Ranking.find({});
-    const friendList = ['Alice', 'Bob', 'Charlie', 'Dave'];
+    const friendList = ['Smiff', 'AT', 'Lob', 'Atrain', 'Heez', 'Deevee', 'Shabaz', 'Naz'];
     const totals = friendList.reduce((acc, friend) => {
       acc[friend] = 0;
       return acc;

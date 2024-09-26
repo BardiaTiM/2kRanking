@@ -1,6 +1,8 @@
+// app/layout.js or app/layout.tsx
 import localFont from "next/font/local";
 import "./globals.css";
 
+// Define custom fonts using next/font/local
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`bg-background text-foreground font-sans antialiased ${geistSans.variable} ${geistMono.variable}`}
       >
         {children}
       </body>
